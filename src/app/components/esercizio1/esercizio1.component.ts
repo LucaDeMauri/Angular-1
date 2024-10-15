@@ -18,6 +18,9 @@ export class Esercizio1Component {
     if(this.hobby !== ''){
       this.isDisabled = false;
     }
+    else{
+      this.isDisabled = true;
+    }
   }
 
   saluta(): void{

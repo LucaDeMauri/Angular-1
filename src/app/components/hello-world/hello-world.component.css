@@ -1,14 +1,5 @@
-.somma{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f9a8a8;
-    gap: 10px;
-}
-
-h3{
-    background-color: #f9a8a8;
+.ngIf{
     text-align: center;
-    margin: auto auto;
+    margin: 20px;
+    background-color: rgb(182, 255, 209);
 }

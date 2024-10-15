@@ -7,12 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./hello-world.component.css']
 })
 export class HelloWorldComponent {
-  num1:number = 0;
-  num2:number = 0;
-  risultato:number = 0
+  isLoading: boolean = true;
 
-  somma(){
-    this.risultato = this.num1 + this.num2;
-    
+  caricamento(): void {
+    setTimeout(() => {
+      this.isLoading = false;  
+    }, 7000);  
   }
+ngOnInit(): void{
+  this.caricamento();
+}
 }

@@ -1,7 +1,11 @@
-<h3>esercizio-somma</h3>
-<div class="somma">
-    <input type="number" [(ngModel)]="num1">
-    <input type="number" [(ngModel)]="num2">
-    <button (click)="somma()">Somma</button>
-    <p>{{risultato}}</p>
+
+<div class="ngIf">
+    <h3>ngIf</h3>
+<div *ngIf="isLoading; else isFalse" style="color: red">
+    caricamento...
 </div>
+<ng-template #isFalse style= "color: green">
+    caricamento completato
+</ng-template>
+</div>
+

@@ -9,7 +9,7 @@
 
     <input type="text" [(ngModel)]="hobby">
 
-    <button (click)="saluta()" [disabled] = "isDisabled">Clicca</button>
+    <button [disabled] ="isDisabled" (click)="saluta()" >Clicca</button>
 
     <img src="{{img}}">
 

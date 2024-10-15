@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './components/hello-world/hello-world.component';
 import { Esercizio1Component } from './components/esercizio1/esercizio1.component';
 import { ContatoreComponent } from './components/contatore/contatore.component';
-import { EsercizioSommaComponent } from './components/esercizio-somma/esercizio-somma.component';
+import { SommaComponent } from './components/somma/somma.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,8 @@ import { EsercizioSommaComponent } from './components/esercizio-somma/esercizio-
     HelloWorldComponent,
     Esercizio1Component,
     ContatoreComponent,
-    EsercizioSommaComponent
+    SommaComponent,
+    
   ],
   imports: [
     BrowserModule,
