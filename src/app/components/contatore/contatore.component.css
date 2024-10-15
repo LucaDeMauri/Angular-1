@@ -1,0 +1,26 @@
+.contatore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    background-color: #9faff7;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+p{
+    font-size: 20px;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px ;
+}
+
+button{
+    border-radius: 5px;
+    border: 1px black solid;
+    
+}

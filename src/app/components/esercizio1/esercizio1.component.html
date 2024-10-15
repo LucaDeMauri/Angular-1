@@ -1,0 +1,22 @@
+<h3>Componente esercizio 1</h3>
+
+<div id="presentazione">
+    <h1>{{nome}} {{cognome}}</h1> 
+    
+    <p>{{eta}} anni</p>
+
+    <p>Hobby: {{hobby}}</p>
+
+    <input type="text" [(ngModel)]="hobby">
+
+    <button (click)="saluta()" [disabled] = "isDisabled">Clicca</button>
+
+    <img src="{{img}}">
+
+
+    <p>{{count}}</p>
+    <button (click)="onButtonClick()">Aumenta</button>
+    
+
+
+</div>

@@ -1,0 +1,24 @@
+#presentazione{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e9ecfa;
+    gap: 30px;
+}
+
+h1, p{
+    margin: 0;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+h3{
+    background-color: #e9ecfa;
+    margin: auto;
+    text-align: center;
+}
