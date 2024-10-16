@@ -8,6 +8,7 @@ import { HelloWorldComponent } from './components/hello-world/hello-world.compon
 import { Esercizio1Component } from './components/esercizio1/esercizio1.component';
 import { ContatoreComponent } from './components/contatore/contatore.component';
 import { SommaComponent } from './components/somma/somma.component';
+import { GestioneRuoloComponent } from './components/gestione-ruolo/gestione-ruolo.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SommaComponent } from './components/somma/somma.component';
     Esercizio1Component,
     ContatoreComponent,
     SommaComponent,
+    GestioneRuoloComponent,
     
   ],
   imports: [

@@ -1,11 +1,34 @@
-
 <div class="ngIf">
-    <h3>ngIf</h3>
-<div *ngIf="isLoading; else isFalse" style="color: red">
-    caricamento...
-</div>
-<ng-template #isFalse style= "color: green">
+  <h3>ngIf</h3>
+  <div *ngIf="isLoading; else isFalse" style="color: red">caricamento...</div>
+  <ng-template #isFalse style="color: green">
     caricamento completato
-</ng-template>
+  </ng-template>
+  <hr>
+  <ul>
+    <li *ngFor="let persona of persone; let i = index">
+      <p>{{ i + 1 }}. {{ persona.nome }} {{ persona.eta }}</p>
+    </li>
+  </ul>
+  <hr>
+  <select [(ngModel)]="paeseSelezionato">
+    <option *ngFor="let paese of paesi">{{ paese }}</option>
+  </select>
+  <div>
+    <p>{{ paeseSelezionato }}</p>
+  </div>
+  <hr>
+  <div>
+    <table>
+      <thead>
+        <th>prodotto</th>
+        <th>prezzo</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let prodotto of prodotti">
+          <td>{{ prodotto.prodotto }}</td>
+          <td>{{ prodotto.prezzo }}</td>
+        </tr>
+      </tbody>
+    </table>
 </div>
-

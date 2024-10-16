@@ -1,0 +1,23 @@
+.container{
+    background-color: rgb(244, 213, 245);
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.dtPerson{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem;
+    padding: 1rem;
+    color: rgb(112, 112, 238)
+
+}
+
+.notPerson{
+    font-weight: capitalize;
+    text-transform: underline;
+    margin: 1rem;
+    padding: 1rem;
+    color: rgb(177, 250, 58)
+}
