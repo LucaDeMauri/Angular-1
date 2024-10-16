@@ -1,0 +1,14 @@
+<table>
+    <thead>
+      <th>prodotto</th>
+      <th>prezzo</th>
+    </thead>
+    <tbody>
+        <tr>
+        <td>{{ prodotto.nome }}</td>
+        <td>{{ prodotto.prezzo | currency : "EUR"}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button (click)="inviaMessaggio()">invio del messaggio</button>

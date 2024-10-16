@@ -1,0 +1,35 @@
+<nav>
+    <ul>
+        <li>Contatti</li>
+        <li>User</li>
+    </ul>
+</nav>
+<div>
+</div>
+<section>
+    <div>
+        <app-contatore [datoDalParente]="messaggio"></app-contatore>
+    </div>
+    <div class="parent">
+        <h1>lista prodotti</h1>
+        <ul class="prodotti">
+            <li *ngFor="let prodotto of prodotti" (click)="selectProduct(prodotto)">
+                <p>{{ prodotto.nome }}</p>
+                <p>{{ prodotto.prezzo | currency : "EUR" }}</p>
+            </li>
+        </ul>
+    </div>
+    <div>image1</div>
+</section>
+<section>
+    <div>
+        <app-product-list (messaggioInviato)="riceviMessaggio($event)" [prodotto]="prodottoSelezionato"></app-product-list>
+    </div>
+    <div>
+        <h3> ricevuto dal child</h3>
+        <p> {{messaggioRicevuto}}</p>
+    </div>
+</section>
+<footer>
+    Fotter
+</footer>
