@@ -1,0 +1,25 @@
+.containerUsers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: rgb(255, 237, 216);
+}
+
+.users{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: rgb(200, 156, 240);
+    width: 20%;
+}
+
+.users img{
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+

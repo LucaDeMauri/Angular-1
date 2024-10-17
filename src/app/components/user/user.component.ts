@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IUser } from 'src/app/models/user';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -11,15 +12,15 @@ export class UserComponent {
     
   }
 
-  userDetail: any[] = [];
+  userDetail: IUser[] = [];
 
   ngOnInit(){
-    this.userDTO.getUser(1,10).subscribe(() => {
+    this.userDTO.getUser(1,10).subscribe({
       next:(res: any) => {
-        this.userDetail = res.data
-      }
+        this.userDetail = res.data;
+      },
       error: (err:any) => {
-        console.log(err)
+        console.error(err)
       }
     });
   }

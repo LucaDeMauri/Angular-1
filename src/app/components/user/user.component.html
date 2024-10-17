@@ -1,8 +1,10 @@
-<h1>User</h1>
+<div class="containerUsers">
+    <h1>Users</h1>
 
-<div *ngFor="let user of userDetail">
+<div class="users" *ngFor="let user of userDetail">
     <img src={{user.avatar}} alt="">
     <p>nome: {{user.first_name}} </p>
     <p>cognome: {{user.last_name}}</p>
     <p>email: {{user.email}}</p>
+</div>
 </div>
