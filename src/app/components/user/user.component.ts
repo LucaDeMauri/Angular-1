@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IUser } from 'src/app/models/user';
 import { UserService } from 'src/app/services/user.service';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-user',
@@ -8,9 +9,9 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./user.component.css'],
 })
 export class UserComponent {
-  constructor(private userDTO: UserService) {}
-
   userDetail: IUser[] = [];
+
+  constructor(private userDTO: UserService, private router: Router) {}
 
   ngOnInit() {
     this.userDTO.getUser(1, 10).subscribe({
@@ -21,5 +22,9 @@ export class UserComponent {
         console.error(err);
       },
     });
+  }
+
+  gotoDetail(id: number) {
+    this.router.navigate(['dettagli', id]); 
   }
 }

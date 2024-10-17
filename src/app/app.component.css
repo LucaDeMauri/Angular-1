@@ -1,4 +1,9 @@
-img{
-    height: 100px;
-    width: 100px;
+li {
+    cursor: pointer;
+    width: 20%;
+}
+
+li:hover {
+    color: blue;
+    text-decoration: underline;
 }

@@ -13,6 +13,11 @@ import { GestioneRuoloComponent } from './components/gestione-ruolo/gestione-ruo
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { UserComponent } from './components/user/user.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { DettagliComponent } from './components/dettagli/dettagli.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -26,6 +31,11 @@ import { UserComponent } from './components/user/user.component';
     HomePageComponent,
     ProductListComponent,
     UserComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    DettagliComponent,
+    PageNotFoundComponent,
     
   ],
   imports: [
