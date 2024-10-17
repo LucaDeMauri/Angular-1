@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.css']
+  styleUrls: ['./home-page.component.css'],
 })
 export class HomePageComponent {
-  messaggio: string = "Ciao dal parent";
+  messaggio: string = 'Ciao dal parent';
 
   prodottoSelezionato = {
     nome: '',
@@ -22,18 +22,16 @@ export class HomePageComponent {
     { nome: 'acqua', prezzo: '1' },
     { nome: 'gelato', prezzo: '5' },
     { nome: 'birra', prezzo: '3' },
-    { nome: 'pasta', prezzo: '5' }
-  ]
+    { nome: 'pasta', prezzo: '5' },
+  ];
 
-  messaggioRicevuto: string=''
+  messaggioRicevuto: string = '';
 
-  selectProduct(prodotto: any){
+  selectProduct(prodotto: any) {
     this.prodottoSelezionato = prodotto;
   }
 
-  riceviMessaggio(messaggio: string){
+  riceviMessaggio(messaggio: string) {
     this.messaggioRicevuto = messaggio;
-
   }
-
 }

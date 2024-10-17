@@ -3,22 +3,21 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'app-contatore',
   templateUrl: './contatore.component.html',
-  styleUrls: ['./contatore.component.css']
+  styleUrls: ['./contatore.component.css'],
 })
 export class ContatoreComponent {
-  @Input() datoDalParente:string = '';
+  @Input() datoDalParente: string = '';
   count: number = 0;
 
-  aumenta(): void{
+  aumenta(): void {
     this.count++;
   }
 
-  decrementa(): void{
+  decrementa(): void {
     this.count--;
   }
 
-  reset(): void{
+  reset(): void {
     this.count = 0;
   }
-
 }

@@ -1,29 +1,40 @@
 <div class="container">
-    <h2>Profilo Utente</h2>
-    <label for="ruolo">Selezionare il ruolo:</label>
-    <select id="ruolo" [(ngModel)]="ruolo">
-        <option value="admin">Admin</option>
-        <option value="utente">Utente</option>
-        <option value="oapite">Ospite</option>
-    </select>
-    <div [ngSwitch]="ruolo">
-        <div *ngSwitchCase="'admin'">
-            <h3 [ngStyle]="{'background-color': ruolo ? 'blue' : 'pink'}">Ruolo: Admin</h3>
-            <p [ngClass]="{'dtPerson': ruolo, 'notPerson': !ruolo }">Visualizzare i dati personali</p>
-            <p>Modificare le impostazioni del sito</p>
-            <p>Gestire gli utenti</p>
+  <h2>Profilo Utente</h2>
+  <label for="ruolo">Selezionare il ruolo:</label>
+  <select id="ruolo" [(ngModel)]="ruolo">
+    <option value="admin">Admin</option>
+    <option value="utente">Utente</option>
+    <option value="oapite">Ospite</option>
+  </select>
+  <div [ngSwitch]="ruolo">
+    <div *ngSwitchCase="'admin'">
+      <h3 [ngStyle]="{ 'background-color': ruolo ? 'blue' : 'pink' }">
+        Ruolo: Admin
+      </h3>
+      <p [ngClass]="{ dtPerson: ruolo, notPerson: !ruolo }">
+        Visualizzare i dati personali
+      </p>
+      <p>Modificare le impostazioni del sito</p>
+      <p>Gestire gli utenti</p>
     </div>
     <div *ngSwitchCase="'utente'">
-        <h3 [ngStyle]="{'background-color': ruolo ? 'green' : 'pink'}">Ruolo: Utente</h3>
-        <p>Visualizzare i dati personali</p>
-        <p>Modificare le impostazioni personali</p>
-</div>
-<div *ngSwitchCase="'ospite'">
-    <h3 [ngStyle]="{'background-color': ruolo ? 'yellow' : 'pink'}">Ruolo: Ospite</h3>
-    <p>Visualizzare i dati personali</p>
-</div>
-<div *ngSwitchDefault>
-    <h3 [ngStyle]="{'background-color': ruolo ? 'red' : 'pink'}">Nesssun ruolo selezionato</h3>
-    <p>seleziona un ruolo per visualizzare i suoi privilegi</p>
-</div>
+      <h3 [ngStyle]="{ 'background-color': ruolo ? 'green' : 'pink' }">
+        Ruolo: Utente
+      </h3>
+      <p>Visualizzare i dati personali</p>
+      <p>Modificare le impostazioni personali</p>
+    </div>
+    <div *ngSwitchCase="'ospite'">
+      <h3 [ngStyle]="{ 'background-color': ruolo ? 'yellow' : 'pink' }">
+        Ruolo: Ospite
+      </h3>
+      <p>Visualizzare i dati personali</p>
+    </div>
+    <div *ngSwitchDefault>
+      <h3 [ngStyle]="{ 'background-color': ruolo ? 'red' : 'pink' }">
+        Nesssun ruolo selezionato
+      </h3>
+      <p>seleziona un ruolo per visualizzare i suoi privilegi</p>
+    </div>
+  </div>
 </div>

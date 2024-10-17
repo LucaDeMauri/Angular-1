@@ -1,34 +1,36 @@
-.ngIf{
-    text-align: center;
-    margin: 20px;
-    background-color: rgb(184, 255, 189);
+.ngIf {
+  text-align: center;
+  margin: 20px;
+  background-color: rgb(184, 255, 189);
 }
 
-ul{
-    width: 100px;
-    margin: 0 auto;
+ul {
+  width: 100px;
+  margin: 0 auto;
 }
 
-table{
-    width: 30rem;
-    height: 30rem;
-    border: 1px solid black;
-    margin: 0 auto;
+table {
+  width: 30rem;
+  height: 30rem;
+  border: 1px solid black;
+  margin: 0 auto;
 }
 
-thead{
-    background-color: rgb(219, 219, 219);
-    border: 1px solid black;
+thead {
+  background-color: rgb(219, 219, 219);
+  border: 1px solid black;
 }
 
-th, td, tr{
-    border: 1px solid black;
+th,
+td,
+tr {
+  border: 1px solid black;
 }
 
-hr{
-    width: 30rem;
-    margin: 10px auto;
-    background-color: black;   
-    height: 1px; 
-    border: 0;
+hr {
+  width: 30rem;
+  margin: 10px auto;
+  background-color: black;
+  height: 1px;
+  border: 0;
 }

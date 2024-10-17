@@ -1,22 +1,18 @@
 <h3>Componente esercizio 1</h3>
 
 <div id="presentazione">
-    <h1>{{nome}} {{cognome}}</h1> 
-    
-    <p>{{eta}} anni</p>
+  <h1>{{ nome }} {{ cognome }}</h1>
 
-    <p>Hobby: {{hobby}}</p>
+  <p>{{ eta }} anni</p>
 
-    <input type="text" [(ngModel)]="hobby">
+  <p>Hobby: {{ hobby }}</p>
 
-    <button [disabled] ="isDisabled" (click)="saluta()" >Clicca</button>
+  <input type="text" [(ngModel)]="hobby" />
 
-    <img src="{{img}}">
+  <button [disabled]="isDisabled" (click)="saluta()">Clicca</button>
 
+  <img src="{{ img }}" />
 
-    <p>{{count}}</p>
-    <button (click)="onButtonClick()">Aumenta</button>
-    
-
-
+  <p>{{ count }}</p>
+  <button (click)="onButtonClick()">Aumenta</button>
 </div>

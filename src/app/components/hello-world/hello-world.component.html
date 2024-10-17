@@ -4,20 +4,20 @@
   <ng-template #isFalse style="color: green">
     caricamento completato
   </ng-template>
-  <hr>
+  <hr />
   <ul>
     <li *ngFor="let persona of persone; let i = index">
       <p>{{ i + 1 }}. {{ persona.nome }} {{ persona.eta }}</p>
     </li>
   </ul>
-  <hr>
+  <hr />
   <select [(ngModel)]="paeseSelezionato">
     <option *ngFor="let paese of paesi">{{ paese }}</option>
   </select>
   <div>
     <p>{{ paeseSelezionato }}</p>
   </div>
-  <hr>
+  <hr />
   <div>
     <table>
       <thead>
@@ -31,4 +31,5 @@
         </tr>
       </tbody>
     </table>
+  </div>
 </div>
