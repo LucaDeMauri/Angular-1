@@ -12,7 +12,7 @@ export class AppComponent {
     this.route.navigate(['home']);
     this.route.navigate(['about']);
     this.route.navigate(['contact']);
-
+    
   }
   
 }

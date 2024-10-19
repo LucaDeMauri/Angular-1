@@ -11,9 +11,14 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { DettagliComponent } from './components/dettagli/dettagli.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { FormUserComponent } from './components/form-user/form-user.component';
+import {AuthGuard} from './auth/auth.guard';
+import {LoginComponent} from './components/login/login.component';
+import { AdminComponent } from './components/admin/admin.component';
+
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '', redirectTo: '/login', pathMatch: 'full'},
   { path: 'esercizio1', component: Esercizio1Component },
   { path: 'user', component: UserComponent},
   { path: 'somma', component: SommaComponent},
@@ -24,9 +29,16 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'dettagli/:id', component: DettagliComponent},
-  { path: '**', component: PageNotFoundComponent}
-  
+  { path: 'form-user', component: FormUserComponent},
+  { path: 'login', component: LoginComponent },
+  {
+    path: 'admin',
+    component: AdminComponent,
+    canActivate: [AuthGuard], // Protegge la rotta admin
+  },
+  { path: '**', redirectTo: '/login' }, // Rotta di fallback
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

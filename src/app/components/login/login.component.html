@@ -1,0 +1,35 @@
+<div class="login-container">
+    <h2>Login</h2>
+  
+    <!-- Form Reactive -->
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="username">Username</label>
+        <input id="username" formControlName="username" type="text" />
+  
+        <!-- Mostra un errore se il campo username è vuoto -->
+        <div *ngIf="loginForm.get('username')?.invalid && loginForm.get('username')?.touched">
+          Username is required
+        </div>
+      </div>
+  
+      <div>
+        <label for="password">Password</label>
+        <input id="password" formControlName="password" type="password" />
+  
+        <!-- Mostra un errore se il campo password è vuoto -->
+        <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+          Password is required
+        </div>
+      </div>
+  
+      <!-- Pulsante di submit -->
+      <button type="submit" [disabled]="loginForm.invalid">Login</button>
+    </form>
+  
+    <!-- Mostra un messaggio di errore in caso di credenziali sbagliate -->
+    <div *ngIf="loginError" class="error">
+      {{ loginError }}
+    </div>
+  </div>
+  

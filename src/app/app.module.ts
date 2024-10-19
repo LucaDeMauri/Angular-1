@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms'; // Importa ReactiveFormsModule
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +20,9 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { DettagliComponent } from './components/dettagli/dettagli.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { FormUserComponent } from './components/form-user/form-user.component';
+import { LoginComponent } from './components/login/login.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 
 @NgModule({
@@ -36,12 +41,16 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     ContactComponent,
     DettagliComponent,
     PageNotFoundComponent,
+    FormUserComponent,
+    LoginComponent,
+    AdminComponent,
     
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],
